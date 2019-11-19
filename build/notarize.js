@@ -6,7 +6,7 @@ const appleId = process.env.APPLE_ID
 const appleIdPassword = process.env.APPLE_PASSWORD
 
 // .appのパスを設定
-const appPath = path.resolve(__dirname, '../build/mac/Example.app')
+const appPath = path.resolve(__dirname, '../dist/mac/Example.app')
 
 // package.jsonからappIdを取得
 const configPath = path.resolve(__dirname, '../package.json')
