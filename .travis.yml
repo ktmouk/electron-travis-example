@@ -11,14 +11,14 @@ jobs:
       osx_image: xcode11
       language: node_js
       node_js: 10
-      if: branch = master
+      if: branch = master AND type = push
       script: npm run build -- --mac
 
     - stage: build
       os: linux
       services: docker
       language: generic
-      if: branch = master
+      if: branch = master AND type = push
       script:
         - |
           docker run --rm \
